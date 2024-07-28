@@ -8,13 +8,8 @@ Welcome to 信息资料库!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
-
-
-
-Indices and tables
+   :caption: 软件
+   Manim文档：从入门到劝退
 ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+
