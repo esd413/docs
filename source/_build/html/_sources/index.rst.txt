@@ -8,6 +8,8 @@ Welcome to 信息资料库!
 
 .. toctree::
    :maxdepth: 2
-   :caption: 目录
-   网站/index
+   :caption: 软件
+   软件/index
 ==================
+
+

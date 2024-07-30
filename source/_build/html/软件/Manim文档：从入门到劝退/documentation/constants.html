@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>constants &mdash; 信息资料库 0.0.1 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            信息资料库
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">constants</a><ul>
+<li><a class="reference internal" href="#frame-and-pixel-shape">Frame and pixel shape</a></li>
+<li><a class="reference internal" href="#buffs">Buffs</a></li>
+<li><a class="reference internal" href="#run-times">Run times</a></li>
+<li><a class="reference internal" href="#coordinates">Coordinates</a></li>
+<li><a class="reference internal" href="#mathematical-constant">Mathematical constant</a></li>
+<li><a class="reference internal" href="#text">Text</a></li>
+<li><a class="reference internal" href="#stroke-width">Stroke width</a></li>
+<li><a class="reference internal" href="#colours">Colours</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">信息资料库</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">constants</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/软件/Manim文档：从入门到劝退/documentation/constants.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="constants">
+<h1>constants<a class="headerlink" href="#constants" title="此标题的永久链接"></a></h1>
+<p>The <code class="docutils literal notranslate"><span class="pre">constants.py</span></code> in the <code class="docutils literal notranslate"><span class="pre">manimlib</span></code> folder defines the constants
+needed when running manim. Some constants are not explained here because
+they are only used inside manim.</p>
+<section id="frame-and-pixel-shape">
+<h2>Frame and pixel shape<a class="headerlink" href="#frame-and-pixel-shape" title="此标题的永久链接"></a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ASPECT_RATIO</span> <span class="o">=</span> <span class="mf">16.0</span> <span class="o">/</span> <span class="mf">9.0</span>
+<span class="n">FRAME_HEIGHT</span> <span class="o">=</span> <span class="mf">8.0</span>
+<span class="n">FRAME_WIDTH</span> <span class="o">=</span> <span class="n">FRAME_HEIGHT</span> <span class="o">*</span> <span class="n">ASPECT_RATIO</span>
+<span class="n">FRAME_Y_RADIUS</span> <span class="o">=</span> <span class="n">FRAME_HEIGHT</span> <span class="o">/</span> <span class="mi">2</span>
+<span class="n">FRAME_X_RADIUS</span> <span class="o">=</span> <span class="n">FRAME_WIDTH</span> <span class="o">/</span> <span class="mi">2</span>
+
+<span class="n">DEFAULT_PIXEL_HEIGHT</span> <span class="o">=</span> <span class="mi">1080</span>
+<span class="n">DEFAULT_PIXEL_WIDTH</span> <span class="o">=</span> <span class="mi">1920</span>
+<span class="n">DEFAULT_FPS</span> <span class="o">=</span> <span class="mi">30</span>
+</pre></div>
+</div>
+</section>
+<section id="buffs">
+<h2>Buffs<a class="headerlink" href="#buffs" title="此标题的永久链接"></a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">SMALL_BUFF</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="n">MED_SMALL_BUFF</span> <span class="o">=</span> <span class="mf">0.25</span>
+<span class="n">MED_LARGE_BUFF</span> <span class="o">=</span> <span class="mf">0.5</span>
+<span class="n">LARGE_BUFF</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">DEFAULT_MOBJECT_TO_EDGE_BUFFER</span> <span class="o">=</span> <span class="n">MED_LARGE_BUFF</span>    <span class="c1"># Distance between object and edge</span>
+<span class="n">DEFAULT_MOBJECT_TO_MOBJECT_BUFFER</span> <span class="o">=</span> <span class="n">MED_SMALL_BUFF</span> <span class="c1"># Distance between objects</span>
+</pre></div>
+</div>
+</section>
+<section id="run-times">
+<h2>Run times<a class="headerlink" href="#run-times" title="此标题的永久链接"></a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">DEFAULT_POINTWISE_FUNCTION_RUN_TIME</span> <span class="o">=</span> <span class="mf">3.0</span>
+<span class="n">DEFAULT_WAIT_TIME</span> <span class="o">=</span> <span class="mf">1.0</span>
+</pre></div>
+</div>
+</section>
+<section id="coordinates">
+<h2>Coordinates<a class="headerlink" href="#coordinates" title="此标题的永久链接"></a></h2>
+<p>manim uses three-dimensional coordinates and uses the type of <code class="docutils literal notranslate"><span class="pre">ndarray</span></code></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ORIGIN</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">))</span>
+<span class="n">UP</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">))</span>
+<span class="n">DOWN</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">))</span>
+<span class="n">RIGHT</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">))</span>
+<span class="n">LEFT</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">))</span>
+<span class="n">IN</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">))</span>
+<span class="n">OUT</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">))</span>
+<span class="n">X_AXIS</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">))</span>
+<span class="n">Y_AXIS</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">))</span>
+<span class="n">Z_AXIS</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">((</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">))</span>
+
+<span class="c1"># Useful abbreviations for diagonals</span>
+<span class="n">UL</span> <span class="o">=</span> <span class="n">UP</span> <span class="o">+</span> <span class="n">LEFT</span>
+<span class="n">UR</span> <span class="o">=</span> <span class="n">UP</span> <span class="o">+</span> <span class="n">RIGHT</span>
+<span class="n">DL</span> <span class="o">=</span> <span class="n">DOWN</span> <span class="o">+</span> <span class="n">LEFT</span>
+<span class="n">DR</span> <span class="o">=</span> <span class="n">DOWN</span> <span class="o">+</span> <span class="n">RIGHT</span>
+
+<span class="n">TOP</span> <span class="o">=</span> <span class="n">FRAME_Y_RADIUS</span> <span class="o">*</span> <span class="n">UP</span>
+<span class="n">BOTTOM</span> <span class="o">=</span> <span class="n">FRAME_Y_RADIUS</span> <span class="o">*</span> <span class="n">DOWN</span>
+<span class="n">LEFT_SIDE</span> <span class="o">=</span> <span class="n">FRAME_X_RADIUS</span> <span class="o">*</span> <span class="n">LEFT</span>
+<span class="n">RIGHT_SIDE</span> <span class="o">=</span> <span class="n">FRAME_X_RADIUS</span> <span class="o">*</span> <span class="n">RIGHT</span>
+</pre></div>
+</div>
+</section>
+<section id="mathematical-constant">
+<h2>Mathematical constant<a class="headerlink" href="#mathematical-constant" title="此标题的永久链接"></a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">PI</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span>
+<span class="n">TAU</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">PI</span>
+<span class="n">DEGREES</span> <span class="o">=</span> <span class="n">TAU</span> <span class="o">/</span> <span class="mi">360</span>
+</pre></div>
+</div>
+</section>
+<section id="text">
+<h2>Text<a class="headerlink" href="#text" title="此标题的永久链接"></a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">NORMAL</span> <span class="o">=</span> <span class="s2">&quot;NORMAL&quot;</span>
+<span class="n">ITALIC</span> <span class="o">=</span> <span class="s2">&quot;ITALIC&quot;</span>
+<span class="n">OBLIQUE</span> <span class="o">=</span> <span class="s2">&quot;OBLIQUE&quot;</span>
+<span class="n">BOLD</span> <span class="o">=</span> <span class="s2">&quot;BOLD&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="stroke-width">
+<h2>Stroke width<a class="headerlink" href="#stroke-width" title="此标题的永久链接"></a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">DEFAULT_STROKE_WIDTH</span> <span class="o">=</span> <span class="mi">4</span>
+</pre></div>
+</div>
+</section>
+<section id="colours">
+<h2>Colours<a class="headerlink" href="#colours" title="此标题的永久链接"></a></h2>
+<p>Here are the preview of default colours. (Modified from
+<a class="reference external" href="https://elteoremadebeethoven.github.io/manim_3feb_docs.github.io/html/_static/colors/colors.html">elteoremadebeethoven</a>)</p>
+<div style="float: left;">
+<h3>BLUE</h3>
+<div class="colors BLUE_E"><p class="color-text">BLUE_E</p></div>
+<div class="colors BLUE_D"><p class="color-text">BLUE_D</p></div>
+<div class="colors BLUE_C"><p class="color-text">BLUE_C</p></div>
+<div class="colors BLUE_B"><p class="color-text">BLUE_B</p></div>
+<div class="colors BLUE_A"><p class="color-text">BLUE_A</p></div>
+</div>
+<div style="float: left;">
+<h3>TEAL</h3>
+<div class="colors TEAL_E"><p class="color-text">TEAL_E</p></div>
+<div class="colors TEAL_D"><p class="color-text">TEAL_D</p></div>
+<div class="colors TEAL_C"><p class="color-text">TEAL_C</p></div>
+<div class="colors TEAL_B"><p class="color-text">TEAL_B</p></div>
+<div class="colors TEAL_A"><p class="color-text">TEAL_A</p></div>
+</div>
+<div style="float: left;">
+<h3>GREEN</h3>
+<div class="colors GREEN_E"><p class="color-text">GREEN_E</p></div>
+<div class="colors GREEN_D"><p class="color-text">GREEN_D</p></div>
+<div class="colors GREEN_C"><p class="color-text">GREEN_C</p></div>
+<div class="colors GREEN_B"><p class="color-text">GREEN_B</p></div>
+<div class="colors GREEN_A"><p class="color-text">GREEN_A</p></div>
+</div>
+<div style="float: left;">
+<h3>YELLOW</h3>
+<div class="colors YELLOW_E"><p class="color-text">YELLOW_E</p></div>
+<div class="colors YELLOW_D"><p class="color-text">YELLOW_D</p></div>
+<div class="colors YELLOW_C"><p class="color-text">YELLOW_C</p></div>
+<div class="colors YELLOW_B"><p class="color-text">YELLOW_B</p></div>
+<div class="colors YELLOW_A"><p class="color-text">YELLOW_A</p></div>
+</div>
+<div style="float: left;">
+<h3>GOLD</h3>
+<div class="colors GOLD_E"><p class="color-text">GOLD_E</p></div>
+<div class="colors GOLD_D"><p class="color-text">GOLD_D</p></div>
+<div class="colors GOLD_C"><p class="color-text">GOLD_C</p></div>
+<div class="colors GOLD_B"><p class="color-text">GOLD_B</p></div>
+<div class="colors GOLD_A"><p class="color-text">GOLD_A</p></div>
+</div>
+<div style="float: left;">
+<h3>RED</h3>
+<div class="colors RED_E"><p class="color-text">RED_E</p></div>
+<div class="colors RED_D"><p class="color-text">RED_D</p></div>
+<div class="colors RED_C"><p class="color-text">RED_C</p></div>
+<div class="colors RED_B"><p class="color-text">RED_B</p></div>
+<div class="colors RED_A"><p class="color-text">RED_A</p></div>
+</div>
+<div style="float: left;">
+<h3>MAROON</h3>
+<div class="colors MAROON_E"><p class="color-text">MAROON_E</p></div>
+<div class="colors MAROON_D"><p class="color-text">MAROON_D</p></div>
+<div class="colors MAROON_C"><p class="color-text">MAROON_C</p></div>
+<div class="colors MAROON_B"><p class="color-text">MAROON_B</p></div>
+<div class="colors MAROON_A"><p class="color-text">MAROON_A</p></div>
+</div>
+<div style="float: left;">
+<h3>PURPLE</h3>
+<div class="colors PURPLE_E"><p class="color-text">PURPLE_E</p></div>
+<div class="colors PURPLE_D"><p class="color-text">PURPLE_D</p></div>
+<div class="colors PURPLE_C"><p class="color-text">PURPLE_C</p></div>
+<div class="colors PURPLE_B"><p class="color-text">PURPLE_B</p></div>
+<div class="colors PURPLE_A"><p class="color-text">PURPLE_A</p></div>
+</div>
+<div style="float: left;">
+<h3>GREY</h3>
+<div class="colors GREY_E"><p class="color-text">GREY_E</p></div>
+<div class="colors GREY_D"><p class="color-text">GREY_D</p></div>
+<div class="colors GREY_C"><p class="color-text">GREY_C</p></div>
+<div class="colors GREY_B"><p class="color-text">GREY_B</p></div>
+<div class="colors GREY_A"><p class="color-text">GREY_A</p></div>
+</div>
+<div style="float: left;">
+<h3>Others</h3>
+<div class="colors WHITE"><p class="color-text" style="color: BLACK">WHITE</p></div>
+<div class="colors BLACK"><p class="color-text">BLACK</p></div>
+<div class="colors GREY_BROWN"><p class="color-text-small">GREY_BROWN</p></div>
+<div class="colors DARK_BROWN"><p class="color-text-small">DARK_BROWN</p></div>
+<div class="colors LIGHT_BROWN"><p class="color-text-small">LIGHT_BROWN</p></div>
+<div class="colors PINK"><p class="color-text">PINK</p></div>
+<div class="colors LIGHT_PINK"><p class="color-text-small">LIGHT_PINK</p></div>
+<div class="colors GREEN_SCREEN"><p class="color-text-small">GREEN_SCREEN</p></div>
+<div class="colors ORANGE"><p class="color-text">ORANGE</p></div>
+</div></section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2024, esd413.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

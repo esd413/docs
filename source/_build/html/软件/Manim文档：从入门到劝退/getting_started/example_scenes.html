@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Example Scenes &mdash; 信息资料库 0.0.1 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            信息资料库
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Example Scenes</a><ul>
+<li><a class="reference internal" href="#interactivedevlopment">InteractiveDevlopment</a></li>
+<li><a class="reference internal" href="#animatingmethods">AnimatingMethods</a></li>
+<li><a class="reference internal" href="#textexample">TextExample</a></li>
+<li><a class="reference internal" href="#textransformexample">TexTransformExample</a></li>
+<li><a class="reference internal" href="#updatersexample">UpdatersExample</a></li>
+<li><a class="reference internal" href="#coordinatesystemexample">CoordinateSystemExample</a></li>
+<li><a class="reference internal" href="#graphexample">GraphExample</a></li>
+<li><a class="reference internal" href="#surfaceexample">SurfaceExample</a></li>
+<li><a class="reference internal" href="#openingmanimexample">OpeningManimExample</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">信息资料库</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Example Scenes</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/软件/Manim文档：从入门到劝退/getting_started/example_scenes.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="example-scenes">
+<h1>Example Scenes<a class="headerlink" href="#example-scenes" title="此标题的永久链接"></a></h1>
+<p>After understanding the previous knowledge, we can understand more scenes.
+Many example scenes are given in <code class="docutils literal notranslate"><span class="pre">example_scenes.py</span></code>, let’s start with
+the simplest and one by one.</p>
+<section id="interactivedevlopment">
+<h2>InteractiveDevlopment<a class="headerlink" href="#interactivedevlopment" title="此标题的永久链接"></a></h2>
+<p>This scene is similar to what we wrote in <a class="reference internal" href="quickstart.html"><span class="doc">Quick Start</span></a>.
+And how to interact has been written in the comments.
+No more explanation here.</p>
+</section>
+<section id="animatingmethods">
+<h2>AnimatingMethods<a class="headerlink" href="#animatingmethods" title="此标题的永久链接"></a></h2>
+<p>The new usage in this scene is <code class="docutils literal notranslate"><span class="pre">.get_grid()</span></code> and <code class="docutils literal notranslate"><span class="pre">self.play(mob.animate.method(args))</span></code>.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">.get_grid()</span></code> method will return a new mobject containing multiple copies of this one arranged in a grid.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">self.play(mob.animate.method(args))</span></code> animates the method, and the details are in the comments above.</p></li>
+</ul>
+</section>
+<section id="textexample">
+<h2>TextExample<a class="headerlink" href="#textexample" title="此标题的永久链接"></a></h2>
+<p>The new classes in this scene are <code class="docutils literal notranslate"><span class="pre">Text</span></code>, <code class="docutils literal notranslate"><span class="pre">VGroup</span></code>, <code class="docutils literal notranslate"><span class="pre">Write</span></code>, <code class="docutils literal notranslate"><span class="pre">FadeIn</span></code> and <code class="docutils literal notranslate"><span class="pre">FadeOut</span></code>.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Text</span></code> can create text, define fonts, etc. The usage ais clearly reflected in the above examples.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">VGroup</span></code> can put multiple <code class="docutils literal notranslate"><span class="pre">VMobject</span></code> together as a whole. In the example, the <code class="docutils literal notranslate"><span class="pre">.arrange()</span></code> method is called to arrange the sub-mobjects in sequence downward (<code class="docutils literal notranslate"><span class="pre">DOWN</span></code>), and the spacing is <code class="docutils literal notranslate"><span class="pre">buff</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Write</span></code> is an animation that shows similar writing effects.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">FadeIn</span></code> fades the object in, the second parameter indicates the direction of the fade in.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">FadeOut</span></code> fades out the object, the second parameter indicates the direction of the fade out.</p></li>
+</ul>
+</section>
+<section id="textransformexample">
+<h2>TexTransformExample<a class="headerlink" href="#textransformexample" title="此标题的永久链接"></a></h2>
+<p>The new classes in this scene are <code class="docutils literal notranslate"><span class="pre">Tex</span></code>, <code class="docutils literal notranslate"><span class="pre">TexText</span></code>, <code class="docutils literal notranslate"><span class="pre">TransformMatchingTex</span></code>
+and <code class="docutils literal notranslate"><span class="pre">TransformMatchingShapes</span></code>.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Tex</span></code> uses LaTeX to create mathematical formulas.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TexText</span></code> uses LaTeX to create text.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TransformMatchingTeX</span></code> automatically transforms sub-objects according to the similarities and differences of tex in <code class="docutils literal notranslate"><span class="pre">Tex</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">TransformMatchingShapes</span></code> automatically transform sub-objects directly based on the similarities and differences of the object point sets.</p></li>
+</ul>
+</section>
+<section id="updatersexample">
+<h2>UpdatersExample<a class="headerlink" href="#updatersexample" title="此标题的永久链接"></a></h2>
+<p>The new classes and usage in this scene are <code class="docutils literal notranslate"><span class="pre">always_redraw()</span></code>, <code class="docutils literal notranslate"><span class="pre">DecimalNumber</span></code>, <code class="docutils literal notranslate"><span class="pre">.to_edge()</span></code>,
+<code class="docutils literal notranslate"><span class="pre">.center()</span></code>, <code class="docutils literal notranslate"><span class="pre">always()</span></code>, <code class="docutils literal notranslate"><span class="pre">f_always()</span></code>, <code class="docutils literal notranslate"><span class="pre">.set_y()</span></code> and <code class="docutils literal notranslate"><span class="pre">.add_updater()</span></code>.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">always_redraw()</span></code> function create a new mobject every frame.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DecimalNumber</span></code> is a variable number, speed it up by breaking it into <code class="docutils literal notranslate"><span class="pre">Text</span></code> characters.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.to_edge()</span></code> means to place the object on the edge of the screen.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.center()</span></code> means to place the object in the center of the screen.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">always(f,</span> <span class="pre">x)</span></code> means that a certain function (<code class="docutils literal notranslate"><span class="pre">f(x)</span></code>) is executed every frame.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">f_always(f,</span> <span class="pre">g)</span></code> is similar to <code class="docutils literal notranslate"><span class="pre">always</span></code>, executed <code class="docutils literal notranslate"><span class="pre">f(g())</span></code> every frame.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.set_y()</span></code> means to set the ordinate of the object on the screen.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.add_updater()</span></code> sets an update function for the object. For example: <code class="docutils literal notranslate"><span class="pre">mob1.add_updater(lambda</span> <span class="pre">mob:</span> <span class="pre">mob.next_to(mob2))</span></code> means <code class="docutils literal notranslate"><span class="pre">mob1.next_to(mob2)</span></code> is executed every frame.</p></li>
+</ul>
+</section>
+<section id="coordinatesystemexample">
+<h2>CoordinateSystemExample<a class="headerlink" href="#coordinatesystemexample" title="此标题的永久链接"></a></h2>
+</section>
+<section id="graphexample">
+<h2>GraphExample<a class="headerlink" href="#graphexample" title="此标题的永久链接"></a></h2>
+</section>
+<section id="surfaceexample">
+<h2>SurfaceExample<a class="headerlink" href="#surfaceexample" title="此标题的永久链接"></a></h2>
+<p>This scene shows an example of using a three-dimensional surface, and
+the related usage has been briefly described in the notes.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">.fix_in_frame()</span></code> makes the object not change with the view angle of the screen, and is always displayed at a fixed position on the screen.</p></li>
+</ul>
+</section>
+<section id="openingmanimexample">
+<h2>OpeningManimExample<a class="headerlink" href="#openingmanimexample" title="此标题的永久链接"></a></h2>
+<p>This scene is a comprehensive application of a two-dimensional scene.</p>
+<p>After seeing these scenes, you have already understood part of the
+usage of manim. For more examples, see <a class="reference external" href="https://github.com/3b1b/videos">the video code of 3b1b</a>.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2024, esd413.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

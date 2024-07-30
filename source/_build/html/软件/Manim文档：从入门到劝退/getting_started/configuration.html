@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLI flags and configuration &mdash; 信息资料库 0.0.1 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            信息资料库
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">CLI flags and configuration</a><ul>
+<li><a class="reference internal" href="#command-line-interface">Command Line Interface</a><ul>
+<li><a class="reference internal" href="#some-useful-flags">Some useful flags</a></li>
+<li><a class="reference internal" href="#all-supported-flags">All supported flags</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#custom-config">custom_config</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">信息资料库</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">CLI flags and configuration</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/软件/Manim文档：从入门到劝退/getting_started/configuration.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="cli-flags-and-configuration">
+<h1>CLI flags and configuration<a class="headerlink" href="#cli-flags-and-configuration" title="此标题的永久链接"></a></h1>
+<section id="command-line-interface">
+<h2>Command Line Interface<a class="headerlink" href="#command-line-interface" title="此标题的永久链接"></a></h2>
+<p>To run manim, you need to enter the directory at the same level as <code class="docutils literal notranslate"><span class="pre">manimlib/</span></code>
+and enter the command in the following format into terminal:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>manimgl<span class="w"> </span>&lt;code&gt;.py<span class="w"> </span>&lt;Scene&gt;<span class="w"> </span>&lt;flags&gt;
+<span class="c1"># or</span>
+manim-render<span class="w"> </span>&lt;code&gt;.py<span class="w"> </span>&lt;Scene&gt;<span class="w"> </span>&lt;flags&gt;
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;code&gt;.py</span></code> : The python file you wrote. Needs to be at the same level as <code class="docutils literal notranslate"><span class="pre">manimlib/</span></code>, otherwise you need to use an absolute path or a relative path.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;Scene&gt;</span></code> : The scene you want to render here. If it is not written or written incorrectly, it will list all for you to choose. And if there is only one <code class="docutils literal notranslate"><span class="pre">Scene</span></code> in the file, this class will be rendered directly.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&lt;flags&gt;</span></code> : CLI flags.</p></li>
+</ul>
+<section id="some-useful-flags">
+<h3>Some useful flags<a class="headerlink" href="#some-useful-flags" title="此标题的永久链接"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">-w</span></code> to write the scene to a file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-o</span></code> to write the scene to a file and open the result.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-s</span></code> to skip to the end and just show the final frame.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">-so</span></code> will save the final frame to an image and show it.</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-n</span> <span class="pre">&lt;number&gt;</span></code> to skip ahead to the <code class="docutils literal notranslate"><span class="pre">n</span></code>’th animation of a scene.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-f</span></code> to make the playback window fullscreen.</p></li>
+</ul>
+</section>
+<section id="all-supported-flags">
+<h3>All supported flags<a class="headerlink" href="#all-supported-flags" title="此标题的永久链接"></a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>flag</p></th>
+<th class="head"><p>abbr</p></th>
+<th class="head"><p>function</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--help</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-h</span></code></p></td>
+<td><p>Show the help message and exit</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--version</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-v</span></code></p></td>
+<td><p>Display the version of manimgl</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--write_file</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-w</span></code></p></td>
+<td><p>Render the scene as a movie file</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--skip_animations</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-s</span></code></p></td>
+<td><p>Skip to the last frame</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--low_quality</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-l</span></code></p></td>
+<td><p>Render at a low quality (for faster rendering)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--medium_quality</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-m</span></code></p></td>
+<td><p>Render at a medium quality</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--hd</span></code></p></td>
+<td></td>
+<td><p>Render at a 1080p quality</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--uhd</span></code></p></td>
+<td></td>
+<td><p>Render at a 4k quality</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--full_screen</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-f</span></code></p></td>
+<td><p>Show window in full screen</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--presenter_mode</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-p</span></code></p></td>
+<td><p>Scene will stay paused during wait calls until space bar or right arrow is hit, like a slide show</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--save_pngs</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-g</span></code></p></td>
+<td><p>Save each frame as a png</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--gif</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-i</span></code></p></td>
+<td><p>Save the video as gif</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--transparent</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-t</span></code></p></td>
+<td><p>Render to a movie file with an alpha channel</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--quiet</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-q</span></code></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--write_all</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-a</span></code></p></td>
+<td><p>Write all the scenes from a file</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--open</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-o</span></code></p></td>
+<td><p>Automatically open the saved file once its done</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--finder</span></code></p></td>
+<td></td>
+<td><p>Show the output file in finder</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--config</span></code></p></td>
+<td></td>
+<td><p>Guide for automatic configuration</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--file_name</span> <span class="pre">FILE_NAME</span></code></p></td>
+<td></td>
+<td><p>Name for the movie or image file</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--start_at_animation_number</span> <span class="pre">START_AT_ANIMATION_NUMBER</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-n</span></code></p></td>
+<td><p>Start rendering not from the first animation, but from another, specified by its index. If you passing two comma separated values, e.g. “3,6”, it will end the rendering at the second value.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--embed</span> <span class="pre">[EMBED]</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-e</span></code></p></td>
+<td><p>Creates a new file where the line <code class="docutils literal notranslate"><span class="pre">self.embed</span></code> is inserted into the Scenes construct method. If a string is passed in, the line will be inserted below the last line of code including that string.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--resolution</span> <span class="pre">RESOLUTION</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-r</span></code></p></td>
+<td><p>Resolution, passed as “WxH”, e.g. “1920x1080”</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--fps</span> <span class="pre">FPS</span></code></p></td>
+<td></td>
+<td><p>Frame rate, as an integer</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--color</span> <span class="pre">COLOR</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">-c</span></code></p></td>
+<td><p>Background color</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--leave_progress_bars</span></code></p></td>
+<td></td>
+<td><p>Leave progress bars displayed in terminal</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--video_dir</span> <span class="pre">VIDEO_DIR</span></code></p></td>
+<td></td>
+<td><p>Directory to write video</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">--config_file</span> <span class="pre">CONFIG_FILE</span></code></p></td>
+<td></td>
+<td><p>Path to the custom configuration file</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">--log-level</span> <span class="pre">LOG_LEVEL</span></code></p></td>
+<td></td>
+<td><p>Level of messages to Display, can be DEBUG / INFO / WARNING / ERROR / CRITICAL</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="custom-config">
+<h2>custom_config<a class="headerlink" href="#custom-config" title="此标题的永久链接"></a></h2>
+<p>In order to perform more configuration (about directories, etc.) and permanently
+change the default value (you don’t have to add flags to the command every time),
+you can modify <code class="docutils literal notranslate"><span class="pre">custom_config.yml</span></code>. The meaning of each option is in
+page <a class="reference internal" href="../documentation/custom_config.html"><span class="doc">custom_config</span></a>.</p>
+<p>You can also use different <code class="docutils literal notranslate"><span class="pre">custom_config.yml</span></code> for different directories, such as
+following the directory structure:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>manim/
+├── manimlib/
+│   ├── animation/
+│   ├── ...
+│   ├── default_config.yml
+│   └── window.py
+├── project/
+│   ├── code.py
+│   └── custom_config.yml
+└── custom_config.yml
+</pre></div>
+</div>
+<p>When you enter the <code class="docutils literal notranslate"><span class="pre">project/</span></code> folder and run <code class="docutils literal notranslate"><span class="pre">manimgl</span> <span class="pre">code.py</span> <span class="pre">&lt;Scene&gt;</span></code>,
+it will overwrite <code class="docutils literal notranslate"><span class="pre">manim/default_config.yml</span></code> with <code class="docutils literal notranslate"><span class="pre">custom_config.yml</span></code>
+in the <code class="docutils literal notranslate"><span class="pre">project</span></code> folder.</p>
+<p>Alternatively, you can use <code class="docutils literal notranslate"><span class="pre">--config_file</span></code> flag in CLI to specify configuration file manually.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>manimgl<span class="w"> </span>project/code.py<span class="w"> </span>--config_file<span class="w"> </span>/path/to/custom_config.yml
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2024, esd413.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

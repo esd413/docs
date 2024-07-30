@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>custom_config &mdash; 信息资料库 0.0.1 文档</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/sphinx_highlight.js"></script>
+        <script src="../../../_static/translations.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../../../genindex.html" />
+    <link rel="search" title="搜索" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            信息资料库
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">custom_config</a><ul>
+<li><a class="reference internal" href="#directories"><code class="docutils literal notranslate"><span class="pre">directories</span></code></a></li>
+<li><a class="reference internal" href="#tex"><code class="docutils literal notranslate"><span class="pre">tex</span></code></a></li>
+<li><a class="reference internal" href="#universal-import-line"><code class="docutils literal notranslate"><span class="pre">universal_import_line</span></code></a></li>
+<li><a class="reference internal" href="#style"><code class="docutils literal notranslate"><span class="pre">style</span></code></a></li>
+<li><a class="reference internal" href="#window-position"><code class="docutils literal notranslate"><span class="pre">window_position</span></code></a></li>
+<li><a class="reference internal" href="#window-monitor"><code class="docutils literal notranslate"><span class="pre">window_monitor</span></code></a></li>
+<li><a class="reference internal" href="#full-screen"><code class="docutils literal notranslate"><span class="pre">full_screen</span></code></a></li>
+<li><a class="reference internal" href="#break-into-partial-movies"><code class="docutils literal notranslate"><span class="pre">break_into_partial_movies</span></code></a></li>
+<li><a class="reference internal" href="#camera-resolutions"><code class="docutils literal notranslate"><span class="pre">camera_resolutions</span></code></a></li>
+<li><a class="reference internal" href="#fps"><code class="docutils literal notranslate"><span class="pre">fps</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">信息资料库</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">custom_config</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/软件/Manim文档：从入门到劝退/documentation/custom_config.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="custom-config">
+<h1>custom_config<a class="headerlink" href="#custom-config" title="此标题的永久链接"></a></h1>
+<section id="directories">
+<h2><code class="docutils literal notranslate"><span class="pre">directories</span></code><a class="headerlink" href="#directories" title="此标题的永久链接"></a></h2>
+<ul>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">mirror_module_path</span></code></dt><dd><p>(<code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>) Whether to create a folder named the name of the
+running file under the <code class="docutils literal notranslate"><span class="pre">output</span></code> path, and save the output (<code class="docutils literal notranslate"><span class="pre">images/</span></code>
+or <code class="docutils literal notranslate"><span class="pre">videos/</span></code>) in it.</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt><code class="docutils literal notranslate"><span class="pre">output</span></code></dt><dd><p>Output file path, the videos will be saved in the <code class="docutils literal notranslate"><span class="pre">videos/</span></code> folder under it,
+and the pictures will be saved in the <code class="docutils literal notranslate"><span class="pre">images/</span></code> folder under it.</p>
+<p>For example, if you set <code class="docutils literal notranslate"><span class="pre">output</span></code> to <code class="docutils literal notranslate"><span class="pre">&quot;/.../manim/output&quot;</span></code> and
+<code class="docutils literal notranslate"><span class="pre">mirror_module_path</span></code> to <code class="docutils literal notranslate"><span class="pre">False</span></code>, then you exported <code class="docutils literal notranslate"><span class="pre">Scene1</span></code> in the code
+file and saved the last frame, then the final directory structure will be like:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>    manim/
+    ├── manimlib/
+    │   ├── animation/
+    │   ├── ...
+    │   ├── default_config.yml
+    │   └── window.py
+    ├── output/
+    │   ├── images
+<span class="hll">    │   │   └── Scene1.png
+</span>    │   └── videos
+<span class="hll">    │       └── Scene1.mp4
+</span>    ├── code.py
+    └── custom_config.yml
+</pre></div>
+</div>
+<p>But if you set <code class="docutils literal notranslate"><span class="pre">mirror_module_path</span></code> to <code class="docutils literal notranslate"><span class="pre">True</span></code>, the directory structure will be:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>    manim/
+    ├── manimlib/
+    │   ├── animation/
+    │   ├── ...
+    │   ├── default_config.yml
+    │   └── window.py
+    ├── output/
+<span class="hll">    │   └── code/
+</span>    │       ├── images
+    │       │   └── Scene1.png
+    │       └── videos
+    │           └── Scene1.mp4
+    ├── code.py
+    └── custom_config.yml
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">raster_images</span></code></dt><dd><p>The directory for storing raster images to be used in the code (including
+<code class="docutils literal notranslate"><span class="pre">.jpg</span></code>, <code class="docutils literal notranslate"><span class="pre">.jpeg</span></code>, <code class="docutils literal notranslate"><span class="pre">.png</span></code> and <code class="docutils literal notranslate"><span class="pre">.gif</span></code>), which will be read by <code class="docutils literal notranslate"><span class="pre">ImageMobject</span></code>.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">vector_images</span></code></dt><dd><p>The directory for storing vector images to be used in the code (including
+<code class="docutils literal notranslate"><span class="pre">.svg</span></code> and <code class="docutils literal notranslate"><span class="pre">.xdv</span></code>), which will be read by <code class="docutils literal notranslate"><span class="pre">SVGMobject</span></code>.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">sounds</span></code></dt><dd><p>The directory for storing sound files to be used in <code class="docutils literal notranslate"><span class="pre">Scene.add_sound()</span></code> (
+including <code class="docutils literal notranslate"><span class="pre">.wav</span></code> and <code class="docutils literal notranslate"><span class="pre">.mp3</span></code>).</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">temporary_storage</span></code></dt><dd><p>The directory for storing temporarily generated cache files, including
+<code class="docutils literal notranslate"><span class="pre">Tex</span></code> cache, <code class="docutils literal notranslate"><span class="pre">Text</span></code> cache and storage of object points.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="tex">
+<h2><code class="docutils literal notranslate"><span class="pre">tex</span></code><a class="headerlink" href="#tex" title="此标题的永久链接"></a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">executable</span></code></dt><dd><p>The executable program used to compile LaTeX (<code class="docutils literal notranslate"><span class="pre">latex</span></code> or <code class="docutils literal notranslate"><span class="pre">xelatex</span> <span class="pre">-no-pdf</span></code>
+is recommended)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">template_file</span></code></dt><dd><p>LaTeX template used, in <code class="docutils literal notranslate"><span class="pre">manimlib/tex_templates</span></code></p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">intermediate_filetype</span></code></dt><dd><p>The type of intermediate vector file generated after compilation (<code class="docutils literal notranslate"><span class="pre">dvi</span></code> if
+<code class="docutils literal notranslate"><span class="pre">latex</span></code> is used, <code class="docutils literal notranslate"><span class="pre">xdv</span></code> if <code class="docutils literal notranslate"><span class="pre">xelatex</span></code> is used)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">text_to_replace</span></code></dt><dd><p>The text to be replaced in the template (needn’t to change)</p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="universal-import-line">
+<h2><code class="docutils literal notranslate"><span class="pre">universal_import_line</span></code><a class="headerlink" href="#universal-import-line" title="此标题的永久链接"></a></h2>
+<p>Import line that need to execute when entering interactive mode directly.</p>
+</section>
+<section id="style">
+<h2><code class="docutils literal notranslate"><span class="pre">style</span></code><a class="headerlink" href="#style" title="此标题的永久链接"></a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">font</span></code></dt><dd><p>Default font of Text</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">text_alignment</span></code></dt><dd><p>Default text alignment for LaTeX</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">background_color</span></code></dt><dd><p>Default background color</p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="window-position">
+<h2><code class="docutils literal notranslate"><span class="pre">window_position</span></code><a class="headerlink" href="#window-position" title="此标题的永久链接"></a></h2>
+<p>The relative position of the playback window on the display (two characters,
+the first character means upper(U) / middle(O) / lower(D), the second character
+means left(L) / middle(O) / right(R)).</p>
+</section>
+<section id="window-monitor">
+<h2><code class="docutils literal notranslate"><span class="pre">window_monitor</span></code><a class="headerlink" href="#window-monitor" title="此标题的永久链接"></a></h2>
+<p>The number of the monitor you want the preview window to pop up on. (default is 0)</p>
+</section>
+<section id="full-screen">
+<h2><code class="docutils literal notranslate"><span class="pre">full_screen</span></code><a class="headerlink" href="#full-screen" title="此标题的永久链接"></a></h2>
+<p>Whether open the window in full screen. (default is false)</p>
+</section>
+<section id="break-into-partial-movies">
+<h2><code class="docutils literal notranslate"><span class="pre">break_into_partial_movies</span></code><a class="headerlink" href="#break-into-partial-movies" title="此标题的永久链接"></a></h2>
+<p>If this is set to <code class="docutils literal notranslate"><span class="pre">True</span></code>, then many small files will be written corresponding
+to each <code class="docutils literal notranslate"><span class="pre">Scene.play</span></code> and <code class="docutils literal notranslate"><span class="pre">Scene.wait</span></code> call, and these files will then be combined
+to form the full scene.</p>
+<p>Sometimes video-editing is made easier when working with the broken up scene, which
+effectively has cuts at all the places you might want.</p>
+</section>
+<section id="camera-resolutions">
+<h2><code class="docutils literal notranslate"><span class="pre">camera_resolutions</span></code><a class="headerlink" href="#camera-resolutions" title="此标题的永久链接"></a></h2>
+<p>Export resolutions</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">low</span></code></dt><dd><p>Low resolutions (default is 480p)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">medium</span></code></dt><dd><p>Medium resolutions (default is 720p)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">high</span></code></dt><dd><p>High resolutions (default is 1080p)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">ultra_high</span></code></dt><dd><p>Ultra high resolutions (default is 4K)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">default_resolutions</span></code></dt><dd><p>Default resolutions (one of the above four, default is high)</p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="fps">
+<h2><code class="docutils literal notranslate"><span class="pre">fps</span></code><a class="headerlink" href="#fps" title="此标题的永久链接"></a></h2>
+<p>Export frame rate. (default is 30)</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2024, esd413.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+Manim文档：从入门到劝退
+=============================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Getting Started
+
+   getting_started/installation
+   getting_started/quickstart
+   getting_started/configuration
+   getting_started/example_scenes
+   getting_started/config
+   getting_started/structure
+   getting_started/whatsnew
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Documentation
+
+   documentation/constants
+   documentation/custom_config
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Development
+
+   development/changelog
+   development/contributing
+   development/about
